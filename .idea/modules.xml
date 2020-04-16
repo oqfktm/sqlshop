@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SQLSHOP.iml" filepath="$PROJECT_DIR$/SQLSHOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/SQLSHOP.iml" filepath="$PROJECT_DIR$/src/SQLSHOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../Downloads/javafx-sdk-11.0.2/lib/javafx.iml" filepath="$PROJECT_DIR$/../../../Downloads/javafx-sdk-11.0.2/lib/javafx.iml" />
     </modules>
   </component>
 </project>

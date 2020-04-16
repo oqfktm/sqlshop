@@ -19,7 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8cfae39-6198-4559-b4bf-793ab4218967" name="Default Changelist" comment="" />
+    <list default="true" id="f8cfae39-6198-4559-b4bf-793ab4218967" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SQLSHOP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQLSHOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SQLSHOP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL_SCRIPT.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_SCRIPT.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ConnectionClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectionClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/interface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +55,13 @@
     <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -48,16 +71,46 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-8.0.19.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Githubdesktop\sqlshop\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Custom">
+    <configuration name="Custom" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SQLSHOP" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Downloads\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mysql-connector-java-8.0.19.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/mysql-connector-java-8.0.19.jar" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Custom" />
+      <item itemvalue="JAR Application.mysql-connector-java-8.0.19.jar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.mysql-connector-java-8.0.19.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -89,35 +142,96 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="423" y="133" key="#Project_Structure" timestamp="1587029193981">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="423" y="133" key="#Project_Structure/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587029193981" />
     <state x="552" y="178" key="#SQL_Dialects" timestamp="1585168463588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585168463588" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585168493431">
+    <state x="669" y="139" key="#Unnamed" timestamp="1587026512630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585168493431" />
-    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585166354959">
+    <state x="669" y="139" key="#Unnamed/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587026512630" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587056080597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585166354959" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587056080597" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1587032670974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587032670974" />
+    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587036165641">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587036165641" />
     <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585162299635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585162299635" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1585153518028">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587032409818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585153518028" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1585168446841">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587032409818" />
+    <state x="490" y="174" key="DBNavigator.ProjectSettingsDialog" timestamp="1587024657869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585168446841" />
+    <state x="490" y="174" key="DBNavigator.ProjectSettingsDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587024657869" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1587056245744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587056245744" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587058646059">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587058646059" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587058646059">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587058646059" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587058646059">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587058646059" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587058646059">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587058646059" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587036604997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587036604997" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1587036604997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587036604997" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1587036604997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587036604997" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1587036604997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587036604997" />
+    <state x="646" y="292" key="NewModule_or_Project.wizard" timestamp="1587029189989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="292" key="NewModule_or_Project.wizard/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587029189989" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1587056254037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587056254037" />
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585153236355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585153236355" />
+    <state x="336" y="157" key="new project wizard" timestamp="1587056151462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="157" key="new project wizard/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587056151462" />
   </component>
 </project>

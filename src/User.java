@@ -1,5 +1,3 @@
-package sample;
-
 public class User {
     int ID;
     String Product;
@@ -8,7 +6,7 @@ public class User {
 
 
     public User(int ID, String Product, double Price) {
-        this.id != ID;
+        this.ID = ID;
         this.Product = Product;
         this.Price = Price;
     }

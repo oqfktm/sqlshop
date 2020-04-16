@@ -1,4 +1,5 @@
-create database PhoneShopDB
+create database PhoneShopDB;
+use PhoneShopDB;
 
 create table Products (
 	ID int NOT NULL,

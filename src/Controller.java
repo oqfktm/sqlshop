@@ -1,5 +1,3 @@
-package sample;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -28,7 +26,37 @@ public class Controller implements Initializable {
     @FXML
     TableColumn<User, String> Price;
 
+    @FXML
+    TextField idfield;
+    @FXML
+    TextField hodnota;
 
+    @FXML protected void handleDeleteButtonAction(ActionEvent event) {
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
+            int currentID = Integer.parseInt(idfield.getText());
+            String deleteID = "delete from Products where ID=" + currentID;
+            ResultSet res1t = statement.executeQuery(deleteID);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+    }
+
+    @FXML protected void handleUpdateButtonAction(ActionEvent event2) {
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
+            int currentID = Integer.parseInt(idfield.getText());
+
+            String deleteID = "delete from Products where ID=" + currentID;
+            ResultSet res1t = statement.executeQuery(deleteID);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -49,7 +77,7 @@ public class Controller implements Initializable {
             while (rs.next()) {
                 int ID = rs.getInt("ID");
                 String Product = rs.getString("Product");
-                Double Price = rs.getString("Price");
+                Double Price = rs.getDouble("Price");
 
                 observableList.add(new User(ID, Product, Price));
             }
@@ -62,3 +90,5 @@ public class Controller implements Initializable {
         tableView.setItems(observableList);
     }
 }
+
+
