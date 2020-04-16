@@ -8,7 +8,7 @@ public class User {
 
 
     public User(int ID, String Product, double Price) {
-        this.ID = id;
+        this.id != ID;
         this.Product = Product;
         this.Price = Price;
     }

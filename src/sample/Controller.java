@@ -49,7 +49,7 @@ public class Controller implements Initializable {
             while (rs.next()) {
                 int ID = rs.getInt("ID");
                 String Product = rs.getString("Product");
-                String Price = rs.getString("Price");
+                Double Price = rs.getString("Price");
 
                 observableList.add(new User(ID, Product, Price));
             }
