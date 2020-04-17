@@ -34,4 +34,7 @@ values (3, 'Samsung Galaxy S20 Ultra', 1199);
 insert into Products (ID, Product, Price) 
 values (4, 'Samsung Galaxy Note10+', 1099);
 
+insert into Products (ID, Product, Price) 
+values (5 'OnePlus 8 Pro', 899);
+
 select * from Products
