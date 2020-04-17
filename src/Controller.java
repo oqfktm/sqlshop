@@ -35,9 +35,18 @@ public class Controller implements Initializable {
         Statement statement = null;
         try {
             statement = connection.createStatement();
+
             int currentID = Integer.parseInt(idfield.getText());
-            String deleteID = "delete from Products where ID=" + currentID;
-            ResultSet res1t = statement.executeQuery(deleteID);
+            String currentHodnota = (hodnota.getText());
+
+            String cmd1 = "update Products";
+            String cmd2 = "set Product = " + currentHodnota;
+            String cmd3 = "where ID = " + currentID;
+
+            ResultSet set1 = statement.executeQuery(cmd1);
+            ResultSet set2 = statement.executeQuery(cmd2);
+            ResultSet set3 = statement.executeQuery(cmd3);
+
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -50,8 +59,9 @@ public class Controller implements Initializable {
             statement = connection.createStatement();
             int currentID = Integer.parseInt(idfield.getText());
 
-            String deleteID = "delete from Products where ID=" + currentID;
+            String deleteID = "delete from Products where ID=" + currentID + ";";
             ResultSet res1t = statement.executeQuery(deleteID);
+            
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
