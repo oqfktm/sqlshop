@@ -68,6 +68,22 @@ public class Controller implements Initializable {
 
     }
 
+    @FXML protected void handleInsertButtonAction(ActionEvent event3) {
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
+            String currentHodnota = (hodnota.getText());
+
+            String insertcmd = "insert into Products (ProductName) values ('" + currentHodnota + "');";
+
+            ResultSet res2t = statement.executeQuery(insertcmd);
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         ID.setCellValueFactory(new PropertyValueFactory("ID"));
