@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8cfae39-6198-4559-b4bf-793ab4218967" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,9 +215,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1585153236355" />
-    <state x="336" y="157" key="new project wizard" timestamp="1587056151462">
+    <state x="336" y="157" key="new project wizard" timestamp="1587122412193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="336" y="157" key="new project wizard/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587056151462" />
+    <state x="336" y="157" key="new project wizard/0.0.1920.1040/1920.52.1280.984@0.0.1920.1040" timestamp="1587122412193" />
   </component>
 </project>
