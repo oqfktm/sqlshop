@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" prefHeight="537.0" prefWidth="735.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<GridPane alignment="center" hgap="10" prefHeight="537.0" prefWidth="660.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <AnchorPane prefHeight="521.0" prefWidth="619.0">
          <children>
@@ -20,11 +20,17 @@
                   <Font size="28.0" />
                </font>
             </Text>
+            <Text layoutX="255.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V nasledujucom update bude auto-refresh" wrappingWidth="196.00000780820847">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
             <TextField fx:id="idfield" layoutX="129.0" layoutY="478.0" prefHeight="25.0" prefWidth="41.0" text="ID" />
             <Button fx:id="deleteb" layoutX="483.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" text="Delete" />
             <Button fx:id="updateb" layoutX="424.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleUpdateButtonAction" text="Update" />
             <TextField fx:id="hodnota" layoutX="184.0" layoutY="478.0" prefHeight="25.0" prefWidth="229.0" text="Hodnota" />
-            <Button fx:id="insertb" layoutX="537.0" layoutY="478.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" onAction="#handleInsertButtonAction" text="Insert" />
+            <Button fx:id="insertb" layoutX="537.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleInsertButtonAction" prefHeight="25.0" prefWidth="51.0" text="Insert" />
+            <Button fx:id="REFRESH" layoutX="460.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleREFRESH" prefHeight="37.0" prefWidth="77.0" text="REFRESH" />
          </children></AnchorPane>
    </children>
    <columnConstraints>

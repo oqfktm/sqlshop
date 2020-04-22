@@ -7,19 +7,22 @@ public class ConnectionClass {
     public Connection getConnection(){
 
 
-        Connection connection;
-        String dbName = "PhoneShopDB";
-        String user="root";
-        String pass ="";
+        Connection connection = null;
 
         try {
+            String dbName = "PhoneShopDB";
+            String user="root";
+            String pass ="";
+            String URL = "jdbc:mysql://localhost:3308/PhoneShopDB"; // SET GLOBAL time_zone = '-1:00';
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3308/"+ dbName + " " + user + "");
+            connection = DriverManager.getConnection(URL,user,pass);
+            System.out.println("Connection Created");
 
-            return connection;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return connection;
+
     }
 }
