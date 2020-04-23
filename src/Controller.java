@@ -27,6 +27,7 @@ public class Controller implements Initializable {
     public static final String YELLOW = "\u001B[33m";
     public static final String BLUE = "\u001B[34m";
     public static final String GREEN = "\u001B[32m";
+    public static final String RED = "\u001B[31m";
 
     ConnectionClass cn = new ConnectionClass();
     Connection connection = cn.getConnection();
@@ -51,6 +52,11 @@ public class Controller implements Initializable {
         try {
             statement = connection.createStatement();
 
+            if (idfield.getText() == "" || hodnota.getText() == "") {
+            System.out.println(RED + "[PhoneShop] Fields cannot be empty!");
+            return;
+            }
+
             int currentID = Integer.parseInt(idfield.getText());
             String currentHodnota = (hodnota.getText());
 
@@ -62,7 +68,7 @@ public class Controller implements Initializable {
             // boolean set1 = statement.execute(cmd1);
             // boolean set2 = statement.execute(cmd2);
             // boolean set3 = statement.execute(cmd3);
-            System.out.print(GREEN + "[PhoneShop] Updating ID " + currentID + "...      ");
+            System.out.println(GREEN + "[PhoneShop] Updating ID " + currentID + "...");
             System.out.println(BLUE + "[SQL] Successfully updated ID " + currentID + ".");
 
             RefreshFunction();
@@ -76,11 +82,20 @@ public class Controller implements Initializable {
     @FXML protected void handleDeleteButtonAction(ActionEvent event2) {
         Statement statement = null;
         try {
+
+            if (idfield.getText() == "") {
+                System.out.println(RED + "[PhoneShop] ID field cannot be empty!");
+                return;
+            }
+
             statement = connection.createStatement();
             int currentID = Integer.parseInt(idfield.getText());
 
             String deleteID = "delete from Products where ID=" + currentID + ";";
             int exec_1 = statement.executeUpdate(deleteID);
+
+            System.out.println(GREEN + "[PhoneShop] Delete ID " + currentID + "...");
+            System.out.println(BLUE + "[SQL] Successfully deleted ID " + currentID + ".");
 
             RefreshFunction();
         } catch (SQLException throwables) {
@@ -92,6 +107,12 @@ public class Controller implements Initializable {
     @FXML protected void handleInsertButtonAction(ActionEvent event3) {
         Statement statement = null;
         try {
+
+            if (hodnota.getText() == "") {
+                System.out.println(RED + "[PhoneShop] Value field cannot be empty!");
+                return;
+            }
+
             statement = connection.createStatement();
             String currentHodnota = (hodnota.getText());
             // int currentID = Integer.parseInt(idfield.getText());
@@ -101,6 +122,9 @@ public class Controller implements Initializable {
 
             int exec_2 = statement.executeUpdate(insertcmd + " " + insertcmd2);
            // int exec_3 = statement.executeUpdate(insertcmd2);
+
+            System.out.println(GREEN + "[PhoneShop] Inserting...");
+            System.out.println(BLUE + "[SQL] Successfully created data.");
 
             RefreshFunction();
 
