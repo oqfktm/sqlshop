@@ -1,11 +1,11 @@
-public class User {
+public class Product {
     int ID;
     String Product;
     double Price;
 
 
 
-    public User(int ID, String Product, double Price) {
+    public Product(int ID, String Product, double Price) {
         this.ID = ID;
         this.Product = Product;
         this.Price = Price;

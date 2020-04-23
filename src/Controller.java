@@ -19,23 +19,32 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 
+
 public class Controller implements Initializable {
+
+    // ANSI Console Color Support
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String YELLOW = "\u001B[33m";
+    public static final String BLUE = "\u001B[34m";
+    public static final String GREEN = "\u001B[32m";
+
     ConnectionClass cn = new ConnectionClass();
     Connection connection = cn.getConnection();
-    ObservableList<User> observableList = FXCollections.observableArrayList();
+    ObservableList<Product> observableList = FXCollections.observableArrayList();
     @FXML
-    TableView<User> tableView = new TableView();
+    TableView<Product> tableView = new TableView();
     @FXML
-    TableColumn<User, String> ID;
+    TableColumn<Product, String> ID;
     @FXML
-    TableColumn<User, String> Product;
+    TableColumn<Product, String> Product;
     @FXML
-    TableColumn<User, String> Price;
+    TableColumn<Product, String> Price;
 
     @FXML
     TextField idfield;
     @FXML
     TextField hodnota;
+
 
     @FXML protected void handleUpdateButtonAction(ActionEvent event) {
         Statement statement = null;
@@ -53,6 +62,10 @@ public class Controller implements Initializable {
             // boolean set1 = statement.execute(cmd1);
             // boolean set2 = statement.execute(cmd2);
             // boolean set3 = statement.execute(cmd3);
+            System.out.print(GREEN + "[PhoneShop] Updating ID " + currentID + "...      ");
+            System.out.println(BLUE + "[SQL] Successfully updated ID " + currentID + ".");
+
+            RefreshFunction();
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -68,7 +81,8 @@ public class Controller implements Initializable {
 
             String deleteID = "delete from Products where ID=" + currentID + ";";
             int exec_1 = statement.executeUpdate(deleteID);
-            
+
+            RefreshFunction();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -80,13 +94,15 @@ public class Controller implements Initializable {
         try {
             statement = connection.createStatement();
             String currentHodnota = (hodnota.getText());
-            int currentID = Integer.parseInt(idfield.getText());
+            // int currentID = Integer.parseInt(idfield.getText());
 
-            String insertcmd = "insert into Products (ID, Product, Price)";
-            String insertcmd2 = "values (" + currentID + ", '" + currentHodnota + "', 0);";
+            String insertcmd = "insert into Products (Product, Price)";
+            String insertcmd2 = "values ('" + currentHodnota + "', 0);";
 
             int exec_2 = statement.executeUpdate(insertcmd + " " + insertcmd2);
            // int exec_3 = statement.executeUpdate(insertcmd2);
+
+            RefreshFunction();
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -96,6 +112,8 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
         ID.setCellValueFactory(new PropertyValueFactory("ID"));
         Product.setCellValueFactory(new PropertyValueFactory("Product"));
         Price.setCellValueFactory(new PropertyValueFactory("Price"));
@@ -115,7 +133,7 @@ public class Controller implements Initializable {
                 String Product = rs.getString("Product");
                 Double Price = rs.getDouble("Price");
 
-                observableList.add(new User(ID, Product, Price));
+                observableList.add(new Product(ID, Product, Price));
             }
 
 
@@ -127,6 +145,10 @@ public class Controller implements Initializable {
     }
 
     @FXML protected void handleREFRESH(ActionEvent eventR) {
+        RefreshFunction();
+    }
+
+    void RefreshFunction() {
         tableView.getItems().clear();
 
         String sql = "select * from Products;";
@@ -144,14 +166,17 @@ public class Controller implements Initializable {
                 String Product = rs.getString("Product");
                 Double Price = rs.getDouble("Price");
 
-                observableList.add(new User(ID, Product, Price));
+                observableList.add(new Product(ID, Product, Price));
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
         tableView.setItems(observableList);
         tableView.refresh();
+        System.out.println(YELLOW + "[FXML] Table Refreshed.");
+
     }
+
     }
 
 
